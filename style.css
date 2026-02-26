@@ -1,25 +1,29 @@
+/* Reset mais limpo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
   background: #0d0f1a;
   color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
+/* HEADER - Mobile first */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
   background: #111426;
+  text-align: center;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -27,11 +31,18 @@ header {
   color: gold;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 nav a {
-  margin: 0 15px;
   text-decoration: none;
   color: white;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -39,37 +50,41 @@ nav a:hover {
 }
 
 .phone {
+  display: inline-block;
   background: gold;
   color: black;
   padding: 8px 15px;
   border-radius: 20px;
   font-weight: bold;
+  font-size: 14px;
 }
 
+/* HERO */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 50px;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px;
   background: linear-gradient(135deg, #0d0f1a, #1a1f35);
 }
 
 .hero-text {
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   margin-bottom: 20px;
   color: #ccc;
+  font-size: 14px;
 }
 
 .hero button {
-  padding: 15px 25px;
+  padding: 14px 20px;
   border: none;
   background: gold;
   color: black;
@@ -77,65 +92,71 @@ nav a:hover {
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-.hero button:hover {
-  transform: scale(1.05);
+.hero button:active {
+  transform: scale(0.97);
 }
 
 .hero-image img {
-  width: 350px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
 }
 
+/* SERVICES */
 .services {
-  padding: 80px 50px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .services h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .cards {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .card {
   background: #15192d;
-  padding: 25px;
+  padding: 20px;
   border-radius: 15px;
-  width: 250px;
+  width: 100%;
   transition: 0.3s;
   border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.card:active {
+  transform: scale(0.98);
   border-color: gold;
 }
 
+/* CONTACT */
 .contact {
-  padding: 80px 50px;
+  padding: 60px 20px;
   text-align: center;
   background: #111426;
 }
 
 form {
-  max-width: 500px;
+  max-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   margin-bottom: 15px;
   padding: 12px;
   border-radius: 10px;
   border: none;
+  font-size: 14px;
 }
 
 form button {
@@ -145,12 +166,53 @@ form button {
   background: gold;
   font-weight: bold;
   cursor: pointer;
+  font-size: 14px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: #0d0f1a;
-  font-size: 14px;
+  font-size: 13px;
   color: #aaa;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 50px;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 80px 50px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 250px;
+  }
 }
