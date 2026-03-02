@@ -26,6 +26,17 @@ header {
   background: #111426;
   text-align: center;
 }
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .logo {
   font-size: 20px;
