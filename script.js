@@ -1,10 +1,6 @@
-function scrollToForm() {
-  document.getElementById("form").scrollIntoView({ 
-    behavior: "smooth" 
-  });
-}
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Mensagem enviada com sucesso!");
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });

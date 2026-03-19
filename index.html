@@ -6,79 +6,158 @@
   <title>Gasparotti Contabilidade</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="logo">
-   <a href="index.html"><span>Gasparotti Contabilidade</span></a>
-  </div>
+<header class="header">
+  <div class="container">
 
-  <div class="header-right">
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="paginas/sobre.html">Sobre</a>
-      <a href="paginas/servicos.html">Serviços</a>
-      <a href="paginas/contato.html">Contato</a>
-      <a href="blog/blog.html">Blog</a>
+    <div class="logo">
+      <a href="index.html">Gasparotti Contabilidade</a>
+    </div>
+
+    <nav class="nav">
+      <ul class="menu">
+
+        <li>
+          <a href="#">Início</a>
+          <ul class="submenu">
+            <li><a href="#">Quem ajudamos</a></li>
+            <li><a href="#">MEI</a></li>
+            <li><a href="#">Pequenas empresas</a></li>
+            <li><a href="#">Prestadores de Serviços</a></li>
+            <li><a href="#">Comércio</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Serviços</a>
+          <ul class="submenu">
+            <li><a href="index.html">Abertura de empresas</a></li>
+            <li><a href="#">Contabilidade mensal</a></li>
+            <li><a href="#">BPO financeiro</a></li>
+            <li><a href="#">Regularização de empresa</a></li>
+            <li><a href="#">Imposto de renda</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="planos.html">Planos</a>
+          <ul class="submenu">
+            <li><a href="#">Resumo dos planos</a></li>
+            <li><a href="#">Abra sua empresa</a></li>
+            <li><a href="#">Proposta gratuita</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+
+        <li>
+          <a href="#">Blog</a>
+          <ul class="submenu">
+            <li><a href="#">Dicas Contábeis</a></li>
+            <li><a href="#">Informações Importantes</a></li>
+            <li><a href="#">PF ou PJ?</a></li>
+          </ul>
+        </li>
+
+      </ul>
     </nav>
 
-    <a href="https://wa.me/5516988296452" target="_blank" class="phone">(16) 98829-6452
+    <a href="https://wa.me/5516988296452" target="_blank" class="btn-whatsapp">
+      WhatsApp
     </a>
+
   </div>
 </header>
 
-<a href="https://wa.me/5516988296452" class="whatsapp-btn" target="_blank">
-  Fale pelo WhatsApp
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <h1>Contabilidade de confiança para o seu negócio</h1>
+
+      <p>
+        Especialistas em contabilidade, imposto de renda e assessoria empresarial.
+      </p>
+
+      <ul class="benefits">
+        <li>✔ Atendimento especializado</li>
+        <li>✔ Segurança e transparência</li>
+        <li>✔ Planejamento tributário estratégico</li>
+      </ul>
+
+      <a href="https://wa.me/5516988296452" target="_blank" class="btn-primary">
+        Solicite uma consulta grátis
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img src="imagens/leao.png" alt="Leão contábil">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SERVIÇOS -->
+<section class="services">
+  <div class="container">
+
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Imposto de Renda</h3>
+        <p>Declaração completa para pessoa física e jurídica.</p>
+      </div>
+
+      <div class="card">
+        <h3>Assessoria Trabalhista</h3>
+        <p>Suporte completo para empresas e empregadores.</p>
+      </div>
+
+      <div class="card">
+        <h3>Consultoria Empresarial</h3>
+        <p>Planejamento contábil e tributário para crescimento seguro.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTATO -->
+<section class="contact">
+  <div class="container">
+
+    <h2>Entre em contato</h2>
+
+    <form class="form">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+
+      <button type="submit">Enviar mensagem</button>
+    </form>
+
+  </div>
+</section>
+
+
+<!-- BOTÃO FIXO -->
+<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank">
+  💬
 </a>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Contabilidade de Confiança Para o Seu Negócio</h1>
-    <p>
-      Especialistas em soluções contábeis, declaração de Imposto de Renda e assessoria trabalhista.
-    </p>
-    <a href="https://wa.me/5516988296452" target="_blank"><button>Solicite uma Consulta Grátis</button></a>
-  </div>
-
-  <div class="hero-image">
-    <img src="imagem/leao.png" alt="Leão Contábil">
-  </div>
-</section>
-
-<section class="services">
-  <h2>Nossos Serviços</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Imposto de Renda</h3>
-      <p>Declaração completa e segura para pessoa física e jurídica.</p>
-    </div>
-
-    <div class="card">
-      <h3>Assessoria Trabalhista</h3>
-      <p>Regularização e suporte completo para sua empresa.</p>
-    </div>
-
-    <div class="card">
-      <h3>Consultoria Empresarial</h3>
-      <p>Planejamento estratégico para crescimento sustentável.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Entre em Contato</h2>
-
-  <form>
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu email" required>
-    <textarea rows="4" placeholder="Sua mensagem"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
 
 <footer>
-  © 2026 Gasparotti Contabilidade - Todos os direitos reservados.
+  <p>© 2026 Gasparotti Contabilidade - Todos os direitos reservados.</p>
 </footer>
 
 </body>
