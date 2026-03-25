@@ -219,6 +219,77 @@ body{
 .btn-primary:hover{
   transform:translateY(-2px);
 }
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  min-width: 100%;
+  padding: 40px;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* efeito zoom no ativo */
+.carousel-card.active {
+  transform: scale(1.05);
+}
+
+.h2-carrossel {
+  text-align: center;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev { left: -10px; }
+.next { right: -10px; }
+
+/* DOTS */
+.carousel-dots {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #cbd5f5;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background: #0f172a;
+}
+
+
 
 /* BENEFITS */
 .benefits{
@@ -367,4 +438,44 @@ footer{
 .card:nth-child(2){
   border:2px solid gold;
   transform:scale(1.05);
+}
+/* NÚMEROS */
+.numbers {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.numbers-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.numbers h2 {
+  color: var(--primary);
+  font-size: 32px;
+}
+
+/* CARROSSEL SECTION */
+.carousel-section {
+  padding: 60px 0;
+}
+
+/* RESPONSIVO MELHORADO */
+@media(min-width:768px){
+
+  .numbers-grid {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+.dk{
+    color: aqua;
+}
+
+a{
+ text-decoration: none;
+ color: aqua;
+
 }
