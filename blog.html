@@ -1,181 +1,311 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gasparotti Contabilidade</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog da Gasparotti Contabilidade — Dicas contábeis, informações importantes e orientações para o seu negócio.">
+  <meta name="robots" content="index, follow">
+  <title>Blog — Gasparotti Contabilidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    /* ESTILOS ESPECÍFICOS DO BLOG */
+    .blog-hero {
+      padding: 70px 0 50px;
+      background: linear-gradient(135deg, var(--dark) 0%, #0f1428 100%);
+      text-align: center;
+    }
 
+    .blog-grid {
+      padding: 80px 0;
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    @media (min-width: 640px) {
+      .posts-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .posts-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .post-card {
+      background: var(--card);
+      border: 1px solid var(--primary-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .post-thumb {
+      background: linear-gradient(135deg, var(--dark-3) 0%, #1a2040 100%);
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+
+    .post-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post-tag {
+      display: inline-block;
+      background: var(--primary-dim);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .post-body h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .post-body p {
+      color: var(--text-muted);
+      font-size: 13.5px;
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .post-link {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .post-link:hover { gap: 10px; }
+
+    .post-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+  </style>
+</head>
 <body>
 
-<!-- HEADER -->
+<!-- ── HEADER ─────────────────────────────── -->
 <header class="header">
   <div class="container">
-    <h2 class="logo">Gasparotti Contabilidade</h2>
 
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Serviços</a>
-      <a href="#">Planos</a>
-      <a href="#">Contato</a>
+    <div class="logo">
+      <a href="index.html">Gasparotti <span>Contabilidade</span></a>
+    </div>
+
+    <nav class="nav" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+
+        <li>
+          <a href="#">Serviços</a>
+          <ul class="submenu">
+            <li><a href="#">Abertura de empresas</a></li>
+            <li><a href="#">Contabilidade mensal</a></li>
+            <li><a href="#">BPO financeiro</a></li>
+            <li><a href="#">Regularização de empresa</a></li>
+            <li><a href="#">Imposto de renda</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="planos.html">Planos</a>
+          <ul class="submenu">
+            <li><a href="planos.html">Resumo dos planos</a></li>
+            <li><a href="planos.html">Abra sua empresa</a></li>
+            <li><a href="https://wa.me/5516988296452" target="_blank">Proposta gratuita</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+
+        <li>
+          <a href="blog.html">Blog</a>
+          <ul class="submenu">
+            <li><a href="#">Dicas Contábeis</a></li>
+            <li><a href="#">Informações Importantes</a></li>
+            <li><a href="#">PF ou PJ?</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
-    <a href="#" class="btn-whatsapp">Falar no WhatsApp</a>
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-whatsapp">
+      💬 WhatsApp
+    </a>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
   </div>
 </header>
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
 
-    <div class="hero-text">
-      <h1>Contabilidade moderna para o seu negócio crescer</h1>
+<!-- MENU MOBILE -->
+<nav class="mobile-nav" aria-label="Menu mobile">
+  <button class="close-btn" aria-label="Fechar menu">✕</button>
+  <a href="index.html">Início</a>
+  <a href="#">Abertura de Empresas</a>
+  <a href="#">Contabilidade Mensal</a>
+  <a href="#">BPO Financeiro</a>
+  <a href="#">Imposto de Renda</a>
+  <a href="planos.html">Planos</a>
+  <a href="#">Sobre</a>
+  <a href="index.html#contato">Contato</a>
+  <a href="blog.html">Blog</a>
+  <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="mobile-whatsapp">💬 Falar no WhatsApp</a>
+</nav>
 
-      <p>
-        Reduza impostos, organize sua empresa e tenha suporte especializado.
-      </p>
 
-      <a href="#" class="btn-primary">
-        Falar com especialista
-      </a>
-    </div>
-
-    <div class="hero-image">
-      <img src="imagens/leao.png" alt="">
-    </div>
-
+<!-- ── HERO BLOG ──────────────────────────── -->
+<section class="blog-hero">
+  <div class="container">
+    <span class="hero-badge fade-up">✦ Conhecimento que gera valor</span>
+    <h1 class="fade-up" style="font-size:34px; margin: 16px auto; max-width:560px;">
+      Blog <em>Gasparotti</em>
+    </h1>
+    <p class="fade-up" style="color:var(--text-muted); max-width:480px; margin: 0 auto; font-size:16px;">
+      Dicas contábeis, orientações tributárias e conteúdo para o seu negócio crescer com segurança.
+    </p>
   </div>
 </section>
 
-<!-- CARROSSEL -->
-<section class="carousel-section">
+
+<!-- ── POSTS ──────────────────────────────── -->
+<section class="blog-grid">
   <div class="container">
 
-    <h2 class="h2-carrossel">Quem ajudamos</h2>
+    <div class="posts-grid">
 
-    <div class="carousel">
-
-      <button class="carousel-btn prev">‹</button>
-
-      <div class="carousel-track">
-
-        <div class="carousel-card">
-          <h3>MEI</h3>
-          <p>Soluções simples e acessíveis.</p>
+      <article class="post-card fade-up">
+        <div class="post-thumb">📊</div>
+        <div class="post-body">
+          <span class="post-tag">Dicas Contábeis</span>
+          <h3>Como reduzir impostos legalmente na sua empresa</h3>
+          <p>Entenda as principais estratégias de planejamento tributário para MEIs, pequenas empresas e prestadores de serviço.</p>
+          <span class="post-meta">Mai 2026 · 5 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
         </div>
+      </article>
 
-        <div class="carousel-card">
-          <h3>Pequenas Empresas</h3>
-          <p>Gestão contábil completa.</p>
+      <article class="post-card fade-up">
+        <div class="post-thumb">🏢</div>
+        <div class="post-body">
+          <span class="post-tag">Abertura de Empresa</span>
+          <h3>MEI ou LTDA? Qual é o melhor para o seu negócio?</h3>
+          <p>Comparamos os dois formatos mais comuns para ajudar você a tomar a melhor decisão na hora de abrir sua empresa.</p>
+          <span class="post-meta">Abr 2026 · 7 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
         </div>
+      </article>
 
-        <div class="carousel-card">
-          <h3>Prestadores</h3>
-          <p>Pague menos impostos legalmente.</p>
+      <article class="post-card fade-up">
+        <div class="post-thumb">💼</div>
+        <div class="post-body">
+          <span class="post-tag">PF ou PJ?</span>
+          <h3>Quando vale a pena migrar de CLT para PJ?</h3>
+          <p>Analisamos os prós e contras de atuar como pessoa jurídica, considerando impostos, benefícios e estabilidade.</p>
+          <span class="post-meta">Mar 2026 · 6 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
         </div>
+      </article>
 
-        <div class="carousel-card">
-          <h3>Comércio</h3>
-          <p>Controle financeiro eficiente.</p>
+      <article class="post-card fade-up">
+        <div class="post-thumb">📅</div>
+        <div class="post-body">
+          <span class="post-tag">Informações Importantes</span>
+          <h3>Calendário fiscal 2026: datas que você não pode perder</h3>
+          <p>Todas as obrigações fiscais do ano em um só lugar. Organize-se para não pagar multas desnecessárias.</p>
+          <span class="post-meta">Jan 2026 · 4 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
         </div>
+      </article>
 
-      </div>
+      <article class="post-card fade-up">
+        <div class="post-thumb">💰</div>
+        <div class="post-body">
+          <span class="post-tag">Dicas Contábeis</span>
+          <h3>Simples Nacional: como funciona e quem pode optar</h3>
+          <p>Tudo sobre o regime tributário mais escolhido pelas pequenas empresas brasileiras. Vale a pena para você?</p>
+          <span class="post-meta">Fev 2026 · 8 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
+        </div>
+      </article>
 
-      <button class="carousel-btn next">›</button>
-
-    </div>
-
-    <div class="carousel-dots"></div>
-
-  </div>
-</section>
-
-<!-- NÚMEROS -->
-<section class="numbers">
-  <div class="container numbers-grid">
-
-    <div>
-      <h2>+100</h2>
-      <p>Clientes atendidos</p>
-    </div>
-
-    <div>
-      <h2>+5 anos</h2>
-      <p>Experiência</p>
-    </div>
-
-    <div>
-      <h2>100%</h2>
-      <p>Atendimento personalizado</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- BENEFÍCIOS -->
-<section class="services">
-  <div class="container">
-
-    <h2>Por que escolher a Gasparotti?</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>💰 Menos impostos</h3>
-        <p>Planejamento tributário estratégico.</p>
-      </div>
-
-      <div class="card">
-        <h3>⚡ Atendimento rápido</h3>
-        <p>Suporte direto no WhatsApp.</p>
-      </div>
-
-      <div class="card">
-        <h3>🔒 Segurança total</h3>
-        <p>Transparência e confiança.</p>
-      </div>
+      <article class="post-card fade-up">
+        <div class="post-thumb">🔒</div>
+        <div class="post-body">
+          <span class="post-tag">Informações Importantes</span>
+          <h3>BPO Financeiro: o que é e como pode ajudar sua empresa</h3>
+          <p>Descubra como terceirizar o financeiro pode reduzir custos e aumentar a eficiência do seu negócio.</p>
+          <span class="post-meta">Jan 2026 · 5 min de leitura</span>
+          <a href="#" class="post-link">Ler artigo →</a>
+        </div>
+      </article>
 
     </div>
 
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
-<section class="services">
-  <div class="container">
 
-    <h2>Como funciona</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>1. Fale com a gente</h3>
-        <p>Entendemos seu negócio.</p>
-      </div>
-
-      <div class="card">
-        <h3>2. Abrimos sua empresa</h3>
-        <p>Cuidamos de toda burocracia.</p>
-      </div>
-
-      <div class="card">
-        <h3>3. Você cresce</h3>
-        <p>Enquanto cuidamos da contabilidade.</p>
-      </div>
-
-    </div>
-
+<!-- ── CTA ────────────────────────────────── -->
+<section class="cta-section">
+  <div class="container fade-up">
+    <h2>Tem alguma dúvida contábil?</h2>
+    <p>Nossos especialistas respondem sem compromisso. Fale agora pelo WhatsApp.</p>
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">
+      💬 Falar com especialista
+    </a>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="contact">
-  <div class="container">
 
-    <h2>Pronto para crescer?</h2>
-    <p>Fale com um especialista agora mesmo.</p>
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  💬
+</a>
 
-    <a href="#" class="btn-primary">Chamar no WhatsApp</a>
 
+<footer>
+  <p>© 2026 Gasparotti Contabilidade — Todos os direitos reservados.</p>
+  <div class="dk">
+    <a href="https://dkwebcode.com.br" target="_blank" rel="noopener">DK WEB CODE</a>
   </div>
-</section>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

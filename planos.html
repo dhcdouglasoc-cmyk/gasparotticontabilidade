@@ -3,34 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planos - Gasparotti Contabilidade</title>
+  <meta name="description" content="Conheça os planos da Gasparotti Contabilidade. Planos para empresas de serviço e comércio, a partir de R$120/mês.">
+  <meta name="robots" content="index, follow">
+  <title>Planos — Gasparotti Contabilidade</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+
+<!-- ── HEADER ─────────────────────────────── -->
+<header class="header">
   <div class="container">
 
     <div class="logo">
-      <a href="index.html">Gasparotti Contabilidade</a>
+      <a href="index.html">Gasparotti <span>Contabilidade</span></a>
     </div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Menu principal">
       <ul class="menu">
+        <li><a href="index.html">Início</a></li>
 
         <li>
-          <a href="index.html">Início</a>
+          <a href="#">Serviços</a>
           <ul class="submenu">
-            <li><a href="#">Quem ajudamos</a></li>
-            <li><a href="#">MEI</a></li>
-            <li><a href="#">Pequenas empresas</a></li>
-            <li><a href="#">Prestadores de Serviços</a></li>
-            <li><a href="#">Comércio</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="paginas/servicos.html">Serviços</a>
-          <ul class="submenu">
-            <li><a href="index.html">Abertura de empresas</a></li>
+            <li><a href="#">Abertura de empresas</a></li>
             <li><a href="#">Contabilidade mensal</a></li>
             <li><a href="#">BPO financeiro</a></li>
             <li><a href="#">Regularização de empresa</a></li>
@@ -39,137 +36,187 @@
         </li>
 
         <li>
-          <a href="#">Planos</a>
+          <a href="planos.html">Planos</a>
           <ul class="submenu">
-            <li><a href="#">Resumo dos planos</a></li>
-            <li><a href="#">Abra sua empresa</a></li>
-            <li><a href="#">Proposta gratuita</a></li>
+            <li><a href="planos.html">Resumo dos planos</a></li>
+            <li><a href="planos.html">Abra sua empresa</a></li>
+            <li><a href="https://wa.me/5516988296452" target="_blank">Proposta gratuita</a></li>
           </ul>
         </li>
 
         <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
 
         <li>
-          <a href="#">Blog</a>
+          <a href="blog.html">Blog</a>
           <ul class="submenu">
             <li><a href="#">Dicas Contábeis</a></li>
             <li><a href="#">Informações Importantes</a></li>
             <li><a href="#">PF ou PJ?</a></li>
           </ul>
         </li>
-
       </ul>
     </nav>
+
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-whatsapp">
+      💬 WhatsApp
+    </a>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
   </div>
 </header>
 
-<section class="services">
+<!-- MENU MOBILE -->
+<nav class="mobile-nav" aria-label="Menu mobile">
+  <button class="close-btn" aria-label="Fechar menu">✕</button>
+  <a href="index.html">Início</a>
+  <a href="#">Abertura de Empresas</a>
+  <a href="#">Contabilidade Mensal</a>
+  <a href="#">BPO Financeiro</a>
+  <a href="#">Imposto de Renda</a>
+  <a href="planos.html">Planos</a>
+  <a href="#">Sobre</a>
+  <a href="index.html#contato">Contato</a>
+  <a href="blog.html">Blog</a>
+  <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="mobile-whatsapp">💬 Falar no WhatsApp</a>
+</nav>
+
+
+<!-- ── HERO PLANOS ────────────────────────── -->
+<section class="hero" style="padding: 60px 0 50px;">
+  <div class="container" style="text-align:center;">
+    <span class="hero-badge fade-up">✦ Transparência em cada plano</span>
+    <h1 class="fade-up" style="font-size:36px; margin: 16px auto; max-width:600px;">
+      Escolha o plano <em>ideal</em> para o seu negócio
+    </h1>
+    <p class="fade-up" style="color:var(--text-muted); max-width:500px; margin: 0 auto; font-size:16px;">
+      Contabilidade completa, abertura de empresa gratuita e atendimento especializado. Sem surpresas.
+    </p>
+  </div>
+</section>
+
+
+<!-- ── PLANOS ─────────────────────────────── -->
+<section class="plans-section">
   <div class="container">
 
-    <h1 style="margin-bottom:10px;">Nossos Planos</h1>
-    <p style="color:var(--text-muted); margin-bottom:40px;">
-      Escolha o plano ideal para o seu negócio crescer com segurança e economia.
-    </p>
-
     <!-- SERVIÇOS -->
-    <h2>Empresas de Serviço</h2>
+    <div class="plan-group fade-up">
+      <h2 class="plan-group-title">🏛️ Empresas de Serviço</h2>
 
-    <div class="cards">
+      <div class="plan-cards">
 
-      <div class="card">
-        <h3>Plano Essencial</h3>
-        <p style="font-size:22px; margin:10px 0;"><strong>R$120/mês</strong></p>
-        <ul>
-          <li>Atendimento via WhatsApp</li>
-          <li>Contabilidade completa</li>
-          <li>Abertura de empresa gratuita</li>
-          <li>Processo 100% online</li>
-          <li>Suporte via chat e e-mail</li>
-          <li>Faturamento até R$ 25 mil</li>
-          <li>Conta PJ gratuita</li>
-          <li>Emissão de notas fiscais</li>
-          <li>Pró-labore para até 2 sócios</li>
-        </ul>
+        <div class="plan-card fade-up">
+          <h3>Plano Essencial</h3>
+          <div class="plan-price">R$ 120 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Atendimento via WhatsApp</li>
+            <li>Contabilidade completa</li>
+            <li>Abertura de empresa gratuita</li>
+            <li>Processo 100% online</li>
+            <li>Suporte via chat e e-mail</li>
+            <li>Faturamento até R$ 25 mil</li>
+            <li>Conta PJ gratuita</li>
+            <li>Emissão de notas fiscais</li>
+            <li>Pró-labore para até 2 sócios</li>
+          </ul>
+          <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">Começar agora</a>
+        </div>
 
-        <a href="https://wa.me/5516988296452" class="btn-primary">Começar agora</a>
+        <div class="plan-card featured fade-up">
+          <span class="plan-badge">⭐ Mais escolhido</span>
+          <h3>Plano Profissional</h3>
+          <div class="plan-price">R$ 180 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Contabilidade completa</li>
+            <li>Abertura de empresa gratuita</li>
+            <li>Certificado digital incluso</li>
+            <li>Atendimento WhatsApp (9h às 22h)</li>
+            <li>Suporte via chat e e-mail</li>
+            <li>Emissão de notas fiscais</li>
+            <li>Conta PJ gratuita</li>
+            <li>Pró-labore dos sócios</li>
+            <li>Faturamento até R$ 50 mil</li>
+            <li>Reunião online com orientações</li>
+          </ul>
+          <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">Começar agora</a>
+        </div>
+
       </div>
-
-      <div class="card" style="border:2px solid gold; transform:scale(1.05);">
-        <h3>Plano Profissional</h3>
-        <p style="font-size:22px; margin:10px 0;"><strong>R$180/mês</strong></p>
-        <ul>
-          <li>Contabilidade completa</li>
-          <li>Abertura de empresa gratuita</li>
-          <li>Certificado digital incluso</li>
-          <li>Atendimento via WhatsApp (9h às 22h)</li>
-          <li>Suporte via chat e e-mail</li>
-          <li>Emissão de notas fiscais</li>
-          <li>Conta PJ gratuita</li>
-          <li>Pró-labore dos sócios</li>
-          <li>Faturamento até R$ 50 mil</li>
-          <li>Reunião online com orientações</li>
-        </ul>
-
-        <a href="https://wa.me/5516988296452" class="btn-primary">Mais escolhido</a>
-      </div>
-
     </div>
 
     <!-- COMÉRCIO -->
-    <h2 style="margin-top:60px;">Empresas de Comércio</h2>
+    <div class="plan-group fade-up">
+      <h2 class="plan-group-title">🛒 Empresas de Comércio</h2>
 
-    <div class="cards">
+      <div class="plan-cards">
 
-      <div class="card">
-        <h3>Plano Start</h3>
-        <p style="font-size:22px; margin:10px 0;"><strong>R$215,90/mês</strong></p>
-        <ul>
-          <li>Contabilidade completa</li>
-          <li>Abertura de empresa gratuita</li>
-          <li>Atendimento via WhatsApp</li>
-          <li>Atendimento telefônico</li>
-          <li>Emissão de notas fiscais</li>
-          <li>Conta digital PJ integrada</li>
-          <li>Pró-labore dos sócios</li>
-          <li>Faturamento até R$ 100 mil</li>
-          <li>Regime tributário incluso</li>
-        </ul>
+        <div class="plan-card fade-up">
+          <h3>Plano Start</h3>
+          <div class="plan-price">R$ 215,90 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Contabilidade completa</li>
+            <li>Abertura de empresa gratuita</li>
+            <li>Atendimento via WhatsApp</li>
+            <li>Atendimento telefônico</li>
+            <li>Emissão de notas fiscais</li>
+            <li>Conta digital PJ integrada</li>
+            <li>Pró-labore dos sócios</li>
+            <li>Faturamento até R$ 100 mil</li>
+            <li>Regime tributário incluso</li>
+          </ul>
+          <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">Começar agora</a>
+        </div>
 
-        <a href="https://wa.me/5516988296452" class="btn-primary">Começar agora</a>
+        <div class="plan-card featured fade-up">
+          <span class="plan-badge">🚀 Completo</span>
+          <h3>Plano Elite</h3>
+          <div class="plan-price">R$ 429,90 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Tudo do Plano Start</li>
+            <li>Certificado digital incluso</li>
+            <li>Folha de pagamento inclusa</li>
+            <li>Suporte prioritário</li>
+            <li>Consultoria tributária mensal</li>
+          </ul>
+          <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">Falar com especialista</a>
+        </div>
+
       </div>
-
-      <div class="card">
-        <h3>Plano Elite</h3>
-        <p style="font-size:22px; margin:10px 0;"><strong>R$429,90/mês</strong></p>
-        <ul>
-          <li>Tudo do plano Start</li>
-          <li>Certificado digital</li>
-          <li>Folha de pagamento inclusa</li>
-        </ul>
-
-        <a href="https://wa.me/5516988296452" class="btn-primary">Falar com especialista</a>
-      </div>
-
     </div>
 
   </div>
 </section>
-<!-- BOTÃO FIXO -->
-<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank">
+
+
+<!-- ── CTA FINAL ──────────────────────────── -->
+<section class="cta-section">
+  <div class="container fade-up">
+    <h2>Ainda com dúvidas?</h2>
+    <p>Nossos especialistas ajudam a encontrar o melhor plano para você, sem custo.</p>
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">
+      💬 Solicitar proposta gratuita
+    </a>
+  </div>
+</section>
+
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   💬
 </a>
 
 
 <footer>
-  <p>© 2026 Gasparotti Contabilidade - Todos os direitos reservados</p>
-    <div class="dk">
-<a href="https://dkwebcode.com.br">
-    <p>DK WEB CODE</p>
-</a>
-</div>
+  <p>© 2026 Gasparotti Contabilidade — Todos os direitos reservados.</p>
+  <div class="dk">
+    <a href="https://dkwebcode.com.br" target="_blank" rel="noopener">DK WEB CODE</a>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

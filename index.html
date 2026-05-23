@@ -3,29 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gasparotti Contabilidade — Especialistas em abertura de empresa, imposto de renda, contabilidade mensal e assessoria empresarial. Atendimento via WhatsApp.">
+  <meta name="keywords" content="contabilidade, abertura de empresa, imposto de renda, BPO financeiro, assessoria empresarial, MEI, Gasparotti">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Gasparotti Contabilidade">
+  <meta property="og:description" content="Contabilidade de confiança para o seu negócio crescer.">
+  <meta property="og:type" content="website">
   <title>Gasparotti Contabilidade</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
 
+<!-- ── HEADER ─────────────────────────────── -->
 <header class="header">
   <div class="container">
 
     <div class="logo">
-      <a href="index.html">Gasparotti Contabilidade</a>
+      <a href="index.html">Gasparotti <span>Contabilidade</span></a>
     </div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Menu principal">
       <ul class="menu">
-
-        <li><a href="#">Início</a></li>
-
+        <li><a href="index.html">Início</a></li>
 
         <li>
           <a href="#">Serviços</a>
           <ul class="submenu">
-            <li><a href="index.html">Abertura de empresas</a></li>
+            <li><a href="#">Abertura de empresas</a></li>
             <li><a href="#">Contabilidade mensal</a></li>
             <li><a href="#">BPO financeiro</a></li>
             <li><a href="#">Regularização de empresa</a></li>
@@ -36,9 +43,9 @@
         <li>
           <a href="planos.html">Planos</a>
           <ul class="submenu">
-            <li><a href="#">Resumo dos planos</a></li>
-            <li><a href="#">Abra sua empresa</a></li>
-            <li><a href="#">Proposta gratuita</a></li>
+            <li><a href="planos.html">Resumo dos planos</a></li>
+            <li><a href="planos.html">Abra sua empresa</a></li>
+            <li><a href="https://wa.me/5516988296452" target="_blank">Proposta gratuita</a></li>
           </ul>
         </li>
 
@@ -46,138 +53,236 @@
         <li><a href="#">Contato</a></li>
 
         <li>
-          <a href="#">Blog</a>
-        
+          <a href="blog.html">Blog</a>
+          <ul class="submenu">
+            <li><a href="#">Dicas Contábeis</a></li>
+            <li><a href="#">Informações Importantes</a></li>
+            <li><a href="#">PF ou PJ?</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
-    <a href="https://wa.me/5516988296452" target="_blank" class="btn-whatsapp">
-      WhatsApp
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-whatsapp">
+      💬 WhatsApp
     </a>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
   </div>
 </header>
 
+<!-- MENU MOBILE -->
+<nav class="mobile-nav" aria-label="Menu mobile">
+  <button class="close-btn" aria-label="Fechar menu">✕</button>
+  <a href="index.html">Início</a>
+  <a href="#">Abertura de Empresas</a>
+  <a href="#">Contabilidade Mensal</a>
+  <a href="#">BPO Financeiro</a>
+  <a href="#">Imposto de Renda</a>
+  <a href="planos.html">Planos</a>
+  <a href="#">Sobre</a>
+  <a href="#">Contato</a>
+  <a href="blog.html">Blog</a>
+  <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="mobile-whatsapp">💬 Falar no WhatsApp</a>
+</nav>
 
-<!-- HERO -->
+
+<!-- ── HERO ───────────────────────────────── -->
 <section class="hero">
   <div class="container hero-content">
 
-    <div class="hero-text">
-      <h1>Contabilidade de confiança para o seu negócio</h1>
-
-      <p>
-        Especialistas em contabilidade, imposto de renda e assessoria empresarial.
-      </p>
+    <div class="hero-text fade-up">
+      <span class="hero-badge">✦ Contabilidade especializada</span>
+      <h1>Contabilidade de <em>confiança</em> para o seu negócio</h1>
+      <p>Especialistas em contabilidade, imposto de renda e assessoria empresarial. Atendimento direto, sem complicação.</p>
 
       <ul class="benefits">
-        <li>✔ Atendimento especializado</li>
-        <li>✔ Segurança e transparência</li>
+        <li>✔ Atendimento especializado e personalizado</li>
+        <li>✔ Segurança e total transparência</li>
         <li>✔ Planejamento tributário estratégico</li>
       </ul>
 
-      <a href="https://wa.me/5516988296452" target="_blank" class="btn-primary">
+      <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">
         Solicite uma consulta grátis
       </a>
     </div>
 
-    <div class="hero-image">
-      <img src="imagens/leao.png" alt="Leão contábil">
+    <div class="hero-image fade-up">
+      <img src="imagens/leao.png" alt="Leão contador Gasparotti" width="400" height="400" loading="eager">
     </div>
 
   </div>
 </section>
 
-<!--Carrossel-->
+
+<!-- ── QUEM AJUDAMOS ──────────────────────── -->
 <section class="carousel-section">
   <div class="container">
 
-    <h2 class="h2-carrossel">Quem ajudamos</h2>
-
-    <div class="carousel">
-
-      <button class="carousel-btn prev">‹</button>
-
-      <div class="carousel-track">
-
-        <div class="carousel-card">
-          <div class="icon">👤</div>
-          <h3>MEI</h3>
-          <p>Soluções simples e acessíveis.</p>
-        </div>
-
-        <div class="carousel-card">
-          <div class="icon">🏢</div>
-          <h3>Pequenas Empresas</h3>
-          <p>Gestão contábil completa.</p>
-        </div>
-
-        <div class="carousel-card">
-          <div class="icon">💼</div>
-          <h3>Prestadores</h3>
-          <p>Pague menos impostos legalmente.</p>
-        </div>
-
-        <div class="carousel-card">
-          <div class="icon">🛒</div>
-          <h3>Comércio</h3>
-          <p>Controle financeiro eficiente.</p>
-        </div>
-
-      </div>
-
-      <button class="carousel-btn next">›</button>
-
+    <div class="section-header fade-up">
+      <h2>Quem ajudamos</h2>
+      <p>Soluções para cada perfil de negócio</p>
     </div>
 
-    <!-- Bolinhas -->
+    <div class="carousel-wrap">
+      <div class="carousel">
+        <div class="carousel-track">
+
+          <div class="carousel-card">
+            <span class="icon">👤</span>
+            <h3>MEI</h3>
+            <p>Soluções simples e acessíveis para quem está começando.</p>
+          </div>
+
+          <div class="carousel-card">
+            <span class="icon">🏢</span>
+            <h3>Pequenas Empresas</h3>
+            <p>Gestão contábil completa para crescer com segurança.</p>
+          </div>
+
+          <div class="carousel-card">
+            <span class="icon">💼</span>
+            <h3>Prestadores de Serviço</h3>
+            <p>Pague menos impostos legalmente e com tranquilidade.</p>
+          </div>
+
+          <div class="carousel-card">
+            <span class="icon">🛒</span>
+            <h3>Comércio</h3>
+            <p>Controle financeiro eficiente para seu negócio prosperar.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+      <button class="carousel-btn next" aria-label="Próximo">›</button>
+    </div>
+
     <div class="carousel-dots"></div>
 
   </div>
-  
 </section>
 
 
+<!-- ── NÚMEROS ────────────────────────────── -->
+<section class="numbers">
+  <div class="container numbers-grid">
+    <div class="stat fade-up">
+      <h2 data-target="100" data-prefix="+" data-suffix="">+100</h2>
+      <p>Clientes atendidos</p>
+    </div>
+    <div class="stat fade-up">
+      <h2 data-target="5" data-prefix="+" data-suffix=" anos">+5 anos</h2>
+      <p>Experiência no mercado</p>
+    </div>
+    <div class="stat fade-up">
+      <h2 data-target="100" data-suffix="%">100%</h2>
+      <p>Atendimento personalizado</p>
+    </div>
+  </div>
+</section>
 
-<!-- SERVIÇOS -->
+
+<!-- ── SERVIÇOS ───────────────────────────── -->
 <section class="services">
   <div class="container">
 
-    <h2>Nossos Serviços</h2>
+    <div class="section-header fade-up">
+      <h2>Nossos Serviços</h2>
+      <p>Tudo que a sua empresa precisa em um só lugar</p>
+    </div>
 
-    <div class="cards">
-
-      <div class="card">
-        <h3>Imposto de Renda</h3>
-        <p>Declaração completa para pessoa física e jurídica.</p>
+    <div class="cards highlight-mid">
+      <div class="card fade-up">
+        <h3>📊 Imposto de Renda</h3>
+        <p>Declaração completa para pessoa física e jurídica, sem erros e dentro do prazo.</p>
       </div>
-
-      <div class="card">
-        <h3>Assessoria Trabalhista</h3>
-        <p>Suporte completo para empresas e empregadores.</p>
+      <div class="card fade-up">
+        <h3>👷 Assessoria Trabalhista</h3>
+        <p>Suporte completo para empresas e empregadores em toda a parte trabalhista.</p>
       </div>
-
-      <div class="card">
-        <h3>Consultoria Empresarial</h3>
-        <p>Planejamento contábil e tributário para crescimento seguro.</p>
+      <div class="card fade-up">
+        <h3>📈 Consultoria Empresarial</h3>
+        <p>Planejamento contábil e tributário para o crescimento seguro do seu negócio.</p>
       </div>
-
     </div>
 
   </div>
 </section>
 
 
-<!-- CONTATO -->
-<section class="contact">
+<!-- ── POR QUE ESCOLHER ───────────────────── -->
+<section class="services" style="background: var(--dark-3); border-top:1px solid var(--primary-border); border-bottom:1px solid var(--primary-border);">
   <div class="container">
 
-    <h2>Entre em contato</h2>
+    <div class="section-header fade-up">
+      <h2>Por que escolher a Gasparotti?</h2>
+      <p>Diferenciais que fazem a diferença</p>
+    </div>
 
-    <form class="form">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
+    <div class="cards">
+      <div class="card fade-up">
+        <h3>💰 Menos impostos</h3>
+        <p>Planejamento tributário estratégico para reduzir legalmente a carga da sua empresa.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>⚡ Atendimento rápido</h3>
+        <p>Suporte direto no WhatsApp com resposta ágil para todas as suas dúvidas.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>🔒 Segurança total</h3>
+        <p>Transparência, confiança e sigilo absoluto em cada processo contábil.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── COMO FUNCIONA ──────────────────────── -->
+<section class="services">
+  <div class="container">
+
+    <div class="section-header fade-up">
+      <h2>Como funciona</h2>
+      <p>Três passos para começar</p>
+    </div>
+
+    <div class="cards">
+      <div class="card fade-up">
+        <h3>1. Fale com a gente</h3>
+        <p>Entendemos o seu negócio e indicamos o melhor caminho para você.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>2. Abrimos sua empresa</h3>
+        <p>Cuidamos de toda a burocracia, do começo ao fim, sem dor de cabeça.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>3. Você cresce</h3>
+        <p>Enquanto nós cuidamos da contabilidade, você foca no que importa.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── CONTATO ────────────────────────────── -->
+<section class="contact" id="contato">
+  <div class="container">
+
+    <h2 class="fade-up">Entre em contato</h2>
+    <p class="fade-up">Preencha o formulário ou fale diretamente pelo WhatsApp.</p>
+
+    <form class="form fade-up" novalidate>
+      <input type="text" placeholder="Seu nome" required autocomplete="name">
+      <input type="email" placeholder="Seu e-mail" required autocomplete="email">
+      <input type="tel" placeholder="Seu WhatsApp (opcional)" autocomplete="tel">
       <textarea rows="4" placeholder="Sua mensagem"></textarea>
-
       <button type="submit">Enviar mensagem</button>
     </form>
 
@@ -185,22 +290,31 @@
 </section>
 
 
-<!-- BOTÃO FIXO -->
-<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank">
+<!-- ── CTA FINAL ──────────────────────────── -->
+<section class="cta-section">
+  <div class="container fade-up">
+    <h2>Pronto para crescer?</h2>
+    <p>Fale com um especialista agora mesmo, sem compromisso.</p>
+    <a href="https://wa.me/5516988296452" target="_blank" rel="noopener" class="btn-primary">
+      💬 Chamar no WhatsApp
+    </a>
+  </div>
+</section>
+
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/5516988296452" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   💬
 </a>
 
 
 <footer>
-  <p>© 2026 Gasparotti Contabilidade - Todos os direitos reservados.</p>
+  <p>© 2026 Gasparotti Contabilidade — Todos os direitos reservados.</p>
   <div class="dk">
-<a href="https://dkwebcode.com.br">
-    <p>DK WEB CODE</p>
-</a>
-</div>
+    <a href="https://dkwebcode.com.br" target="_blank" rel="noopener">DK WEB CODE</a>
+  </div>
 </footer>
 
 <script src="script.js"></script>
 </body>
-
 </html>
